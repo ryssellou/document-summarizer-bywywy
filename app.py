@@ -5,7 +5,6 @@ import PyPDF2  # For handling PDF files
 # Custom CSS for pink theme
 st.markdown(
     """
-    
     <style>
     .stApp {
         background-color: #ffcccb;  /* Light pink background */
@@ -33,19 +32,19 @@ st.markdown(
         color: #e75480;  /* Dark pink for warnings */
     }
     </style>
-   """ ,
+    """,
     unsafe_allow_html=True,
 )
 
-# Load summarization model
-@st.cache(allow_output_mutation=True)
+# Load summarization model using the new caching function
+@st.cache_resource
 def load_summarizer():
     return pipeline("summarization", model="facebook/bart-large-cnn")
 
 summarizer = load_summarizer()
 
 # Streamlit app
-st.title("📄 Document Summarizer by Wywy")
+st.title("📄 PDF Summarizer by Ryry")
 st.write("Upload a PDF or paste text, and get a concise summary!")
 
 # Input options
