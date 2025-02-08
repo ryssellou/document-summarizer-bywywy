@@ -23,7 +23,7 @@ st.markdown(
         color: #e75480;  /* Dark pink for radio buttons */
     }
     .stTextArea textarea {
-        background-color: #ffe6e6;  /* Light pink for text area */
+        background-color: #FF69b4;  /* Light pink for text area */
     }
     .stFileUploader div {
         color: #e75480;  /* Dark pink for file uploader */
